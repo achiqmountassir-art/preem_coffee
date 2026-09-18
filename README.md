@@ -1,17 +1,57 @@
-# preem_coffee
+# ☕ PREEM COFFEE
 
-A new Flutter project.
+> A modern QR-based café ordering system built with Flutter and Supabase.
 
-## Getting Started
+PREEM COFFEE is a full-stack café ordering platform designed to make
+ordering simple for customers and menu/order management easy for café owners.
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+### 👤 Customer
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- 🌍 English, French and Arabic
+- 📱 Mobile-friendly web interface
+- 🔎 Menu search
+- ☕ Product categories
+- 🛒 Shopping cart
+- ➕ Quantity management
+- 📦 Real-time order creation
+- 🔢 Order number confirmation
+- ⭐ Popular products
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 💻 Admin Dashboard
+
+- 🔐 Admin authentication
+- 📊 Dashboard
+- 🔔 New order notifications
+- 📋 Pending orders
+- ✅ Accept orders
+- 🍔 Product management
+- ➕ Add products
+- ✏️ Edit products
+- 🗑️ Delete products
+- 💰 Change prices
+- 📝 Change descriptions
+- 🖼️ Product image management
+- 🟢 Available / unavailable products
+- ⭐ Popular product management
+
+## 🏗️ Architecture
+
+```text
+                    PREEM COFFEE
+                         │
+              ┌──────────┴──────────┐
+              │                     │
+          CUSTOMER                ADMIN
+             📱                      💻
+              │                     │
+        Browse Menu           Manage Products
+        Add to Cart            Manage Orders
+        Place Order            Accept Orders
+              │                     │
+              └──────────┬──────────┘
+                         │
+                      SUPABASE
+                         ☁️
+                  Database + Storage
